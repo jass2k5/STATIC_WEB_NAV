@@ -20,6 +20,11 @@ a {
     align-items: center;
     justify-content: center;
 }
+/* #hero .hero{
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+} */
 /* hero section */
 #hero{
     background-image: url(wallpaperflare.com_wallpaper.jpg);
@@ -34,26 +39,90 @@ a {
     position: relative;
     z-index: 2;
 }
+
+
 #hero h1{
     display: block;
     width: fit-content;
     font-size: 4rem;
     position: relative;
-    color: white;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
 }
+/* for animation */
+#hero h1:nth-child(1){
+    animation-delay: 0.5s;
+}
+#hero h1:nth-child(2){
+    animation-delay: .5s;
+}
+#hero h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: .8s;
+}
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease forwards;
+    animation-delay: 1s;
+}
+#hero h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: .9s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay: 1.2s;
+}
+
 #hero .ctn{
     display: inline-block;
     padding: 10px 30px;
-    color: crimson;
+    color: whitesmoke;
     background-color: transparent;
     font-size: 2rem;
     border: 2px solid crimson;
     text-transform: uppercase;
     letter-spacing: 1rem;
     margin-top: 20px;
-    transition: .3s ease background-color;
+    transition: .3s ease;
+    transition-property: background-color, color;
     position: relative;
-
+}
+#hero .ctn:hover{
+    color: white;
+    background-color: crimson;
 }
 
 /* end of hero section  */
+
+/* keyframes for animation */
+@keyframes text_reveal_box {
+    0%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+  100%{
+    color: white;
+  }
+}
+@keyframes text_reveal_name {
+    100%{
+        color:crimson;
+        font-weight: 500px;
+    }
+
+}
+/* end of keyframes for animation */
