@@ -111,7 +111,7 @@ a {
     margin: 0 auto;
     padding: 100px;
 }
-#services .service-title{
+#services .section-title{
     font-size: 4rem;
     font-weight: 300;
     color: black;
@@ -120,7 +120,7 @@ a {
     letter-spacing: .2rem;
     text-align: center;
 }
-#services .service-title span{
+#services .section-title span{
     color: crimson;
 }
 #services  .service-top p {
@@ -135,20 +135,37 @@ a {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap-reverse;  
+    margin-top: 30px;
 }
 #services .service-item{
     flex-basis: 40%;
-    /* height: 40vh; */
+    height: 30vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
     border-radius: 30px;
-    background-image: url(pexels-quang-nguyen-vinh-222549-2162442.jpg);
+    background-image: url(pexels-asadphoto-1456291.jpg);
     background-size: cover;
     margin: 10px 5%;
     color: white;
+    position: relative;
+    z-index: 1;
+
+}
+#services .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: black;
+    opacity: .73;
+    z-index: -1;
+
 
 }
 #services .service-item h2{
@@ -159,6 +176,8 @@ a {
     padding-right: 90px;
 
 }
+
+
 /* end of service section  */
 /* keyframes for animation */
 @keyframes text_reveal_box {
