@@ -111,7 +111,7 @@ a {
     margin: 0 auto;
     padding: 100px;
 }
-#services .section-title{
+ .section-title{
     font-size: 4rem;
     font-weight: 300;
     color: black;
@@ -120,7 +120,7 @@ a {
     letter-spacing: .2rem;
     text-align: center;
 }
-#services .section-title span{
+ .section-title span{
     color: crimson;
 }
 #services  .service-top p {
@@ -137,6 +137,7 @@ a {
     flex-wrap: wrap-reverse;  
     margin-top: 30px;
 }
+
 #services .service-item{
     flex-basis: 40%;
     height: 30vh;
@@ -152,6 +153,7 @@ a {
     color: white;
     position: relative;
     z-index: 1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 
 }
 #services .service-item::after{
@@ -168,6 +170,10 @@ a {
 
 
 }
+#services .service-item:hover{
+    transform: translate(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 12);
+}
 #services .service-item h2{
      margin-bottom: 10px;
 }
@@ -179,6 +185,116 @@ a {
 
 
 /* end of service section  */
+/* start of project section  */
+
+/* Main projects section - takes full viewport height */
+
+#projects {
+    min-height: 100vh; /*full height of section*/
+    padding: 40px 20px; /*doesnt let it touch the edges*/
+    background: #f4f4f4; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container to center content and limit max width */
+.projects.container {
+    max-width: 1200px; /*content shouldnt be wider than this making it readable on bigger screens*/
+    margin: 0 auto;   /* left right margin auto centers it*/
+    width: 100%; /* takes full width up to max-width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header section spacing */
+.projects-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Main title styling */
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Makes "Projects" word different color */
+.section-title span {
+    color: #667eea;
+}
+
+/* Container for both project cards - displays them side by side */
+.all-projects {
+    display: flex;
+    gap: 30px; /* space between the two cards */
+}
+
+/* Individual project card */
+.project-item {
+    flex: 1; /* makes both cards equal width */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;   /*can work without it */
+    flex-direction: column; /*can work without it*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.project-item:hover{
+    transform: translate(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 12);
+}
+
+/* Project title (h1) styling */
+.project-info h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Subtitle (h2) styling */
+.project-info h2 {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
+
+/* Paragraph text styling */
+.project-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px; /* space before media */
+}
+
+/* Media container */
+.project-img {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden; /* clips corners of media */
+}
+
+/* Makes video and image fit container without breaking */
+.project-img video,
+.project-img img {
+    width: 100%; /* fills container width */
+    height: auto; /* keeps aspect ratio */
+    display: block;
+    max-height: 100%;
+                  /* removes bottom gap */
+}
+
+/* Mobile responsive - stacks cards vertically on small screens */
+@media screen and (max-width: 768px) {
+    .all-projects {
+        flex-direction: column;
+    }
+} 
+
+/* end of project section  */
 /* keyframes for animation */
 @keyframes text_reveal_box {
     0%{
