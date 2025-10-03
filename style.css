@@ -102,10 +102,68 @@ a {
 
 /* end of hero section  */
 
+/* start of service section  */
+#services{}
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px;
+}
+#services .service-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#services .service-title span{
+    color: crimson;
+}
+#services  .service-top p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+}
+#services .service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;  
+}
+#services .service-item{
+    flex-basis: 40%;
+    /* height: 40vh; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 30px;
+    background-image: url(pexels-quang-nguyen-vinh-222549-2162442.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    color: white;
+
+}
+#services .service-item h2{
+     margin-bottom: 10px;
+}
+#services .icon{
+    margin-bottom: 10px;
+    padding-right: 90px;
+
+}
+/* end of service section  */
 /* keyframes for animation */
 @keyframes text_reveal_box {
     0%{
-        width: 100%;
+        width: 100%; 
         left: 0;
     }
     100%{
