@@ -195,7 +195,7 @@ a {
 
 /* start of service section  */
 #services{
-    background-color: white;
+    background-color: #f4f4f4;
     padding: 80px 0;
 }
 #services .services{
@@ -205,6 +205,13 @@ a {
     margin: 0 auto;
     padding: 0 20px;
 }
+#services .service-top{
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
  .section-title{
     font-size: 4rem;
     font-weight: 300;
@@ -213,7 +220,10 @@ a {
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
+    word-wrap: break-word;
+    hyphens: auto;
 }
+
  .section-title span{
     color: crimson;
 }
@@ -227,6 +237,8 @@ a {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    text-align: justify;
+    word-spacing: normal;
 }
 #services .service-bottom{
     display: grid;
@@ -327,6 +339,10 @@ a {
 .projects-header {
     margin-bottom: 40px;
     text-align: center;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Main title styling */
@@ -416,11 +432,14 @@ a {
 .about.container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 40px;
     display: flex;
     align-items: center;
     gap: 60px;
     flex-wrap: wrap-reverse;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
 }
 .col-left{
     flex: 1;
