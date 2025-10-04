@@ -662,15 +662,47 @@ a {
     .about.container{
         flex-direction: column;
         text-align: center;
+        padding: 30px 20px;
     }
     .section-title{
         font-size: 36px;
     }
+    .col-right{
+        text-align: center;
+    }
+    .col-right h1{
+        font-size: 2.5rem;
+    }
     .col-right h2{
-        font-size: 20px;
+        font-size: 1.8rem;
     }
     .about-img{
         max-width: 300px;
+    }
+    .col-right p{
+        font-size: 1.4rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 480px){
+    .about.container{
+        padding: 20px 15px;        /* Even tighter padding */
+    }
+    .col-right h1{
+        font-size: 2rem;           /* Smaller for phones */
+    }
+    .col-right h2{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    .col-right p{
+        font-size: 1.2rem;         /* Comfortable reading size */
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .about-img{
+        max-width: 250px;          /* Smaller image */
     }
 }
 /* #tablets and smaller  */
