@@ -296,11 +296,16 @@ a {
      font-size: 1.8rem;
      font-weight: 600;
      text-transform: capitalize;
+     word-wrap: break-word;
+     hyphens: auto;
 }
 #services .service-item p{
     font-size: 1rem;
     line-height: 1.6;
     opacity: 0.9;
+    text-align: justify;
+    word-spacing: normal;
+    word-wrap: break;
 }
 #services .icon{
     margin-bottom: 15px;
@@ -482,18 +487,26 @@ a {
     flex: 1;
     min-width: 300px;
 }
+.col-right h1{
+    word-wrap: break-word;
+    hyphens: auto;
+}
 .col-right h2{
     font-size: 24px;
     color: #7f8c8d;
     margin-bottom: 20px;
     text-transform: capitalize;
     font-weight: 400;
+    word-wrap: break-word;
 }
 .col-right p{
     font-size: 16px;
     line-height: 1.8;
     color: #555;
     margin-bottom: 30px;
+    text-align: justify;
+    word-spacing: normal;
+    word-wrap: break-word;
 }
  /* end of about me section  */
 
