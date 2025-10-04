@@ -12,8 +12,9 @@ html{
 a {
     text-decoration:none;
 }
+
 /* container is fixed for many other sections */
-.container{
+#hero .container{
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -127,13 +128,13 @@ a {
     color: crimson;
 }
 #services  .service-top p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
+    line-height: 2.6rem;
+    font-weight: 500;
     letter-spacing: .05rem;
-    color: #555;
-    max-width: 800px;
+    color: #222;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -216,7 +217,7 @@ a {
 /* Main projects section - takes full viewport height */
 
 #projects {
-    min-height: 100vh; /*full height of section*/
+    min-height: auto; /*full height of section*/
     padding: 40px 20px; /*doesnt let it touch the edges*/
     background: #f4f4f4; 
     display: flex;
@@ -295,7 +296,7 @@ a {
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
-    margin-bottom: 20px; /* space before media */
+    margin-bottom: 8px; /* space before media */
 }
 
 /* Media container */
@@ -303,7 +304,7 @@ a {
     width: 100%;
     border-radius: 5px;
     overflow: hidden; 
-    margin-top: auto;/* clips corners of media */
+    margin-top: 0;/* clips corners of media */
 }
 
 /* Makes video and image fit container without breaking */
